@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       audience={process.env["NEXT_PUBLIC_AUTH0_AUDIENCE"]!}
       redirectUri={redirectUri}
     >
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </Auth0Provider>
   );
 }
